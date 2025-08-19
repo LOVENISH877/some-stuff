@@ -1,0 +1,10 @@
+show=drun
+term=kitty
+prompt=Search: any app!!!
+insensitive=true
+allow_images=true
+allow_markup=true
+location=center
+width=600px
+height=500px
+ 
