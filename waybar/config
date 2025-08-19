@@ -1,0 +1,70 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "network",
+    "custom/bluetooth",
+    "pulseaudio", 
+  
+    "backlight",
+    "battery",
+    "custom/wlogout"
+  ],
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "sort-by-number": true
+  },
+  "clock": {
+    "format": "🕒 {:%H:%M}",
+    "tooltip-format": "{:%A, %d %B %Y}",
+    "interval": 60
+  },
+
+"battery": {
+    "states": {
+    "warning": 30,
+    "critical": 15
+    },
+    "format": " {capacity}% {icon} ",
+    "format-charging": "{capacity}% ",
+    "format-plugged": "{capacity}% ",
+    "format-alt": "{time} {icon}",
+    "format-icons": ["▁", "▂", "▃", "▄", "▅"]
+        },
+  "network": {
+    "format-wifi": "📶",
+    "format-ethernet": "🔌",
+    "format-disconnected": "❌",
+    "tooltip": true
+  },
+  "custom/bluetooth": {
+  "format": "",
+  "tooltip": "Toggle Bluetooth",
+  "on-click": "rfkill toggle bluetooth",
+  "interval": 30
+},
+  "backlight": {
+    "format": "{percent}% {icon}",
+    "format-icons": ["🌑","🌒","🌓","🌔", "🌕"],
+    "tooltip": true
+  },
+  "custom/wlogout": {
+    "format": "⏻",
+    "tooltip": "logout",
+    "on-click": "wlogout",
+    "interval": 999999
+  },
+  "pulseaudio": {
+  "format": "🔊 {volume}%",
+  "format-muted": "🔇 muted",
+  "scroll-step": 5,
+  "on-click": "pavucontrol"  
+}
+}
