@@ -1,4 +1,4 @@
-* {
+/* * {
   border: none;
   font-family: "JetBrainsMono Nerd Font", monospace;
   font-size: 14px;
@@ -66,4 +66,186 @@ window#waybar {
 
 #pulseaudio:hover{
   background-color: rgba(255, 255, 255, 0.2);
+} */
+
+
+
+
+/* ──────────────────────────────
+   Solo Leveling Waybar Theme
+   by Lovenish + GPT-5
+   Vibe: Dark, sleek, glowing aura
+────────────────────────────── */
+
+/* ========== Base Setup ========== */
+* {
+  border: none;
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 14px;
+  min-height: 0;
 }
+
+window#waybar {
+  background: rgba(10, 10, 16, 0.8);
+  color: #e0e0e0;
+  border-radius: 10px;
+  padding: 3px 10px;
+  /* backdrop-filter: blur(10px); */ /* Not supported in GTK */
+}
+
+/* ========== Workspaces ========== */
+#workspaces {
+  margin: 0 10px;
+}
+
+#workspaces button {
+  padding: 4px 8px;
+  margin: 0 3px;
+  border-radius: 8px;
+  background: transparent;
+  color: #a0a0a0;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#workspaces button.active {
+  color: #b4c8ff;
+  background: linear-gradient(135deg, rgba(80, 140, 255, 0.15), rgba(140, 90, 255, 0.1));
+  box-shadow:
+    inset 0 0 6px rgba(90, 130, 255, 0.35),
+    0 0 10px rgba(120, 70, 255, 0.25);
+}
+
+#workspaces button:hover {
+  background: linear-gradient(135deg, rgba(90, 150, 255, 0.2), rgba(150, 100, 255, 0.15));
+  color: #d0ddff;
+  box-shadow:
+    inset 0 0 6px rgba(90, 130, 255, 0.4),
+    0 0 12px rgba(120, 70, 255, 0.3);
+}
+
+/* ========== Modules ========== */
+#battery,
+#network,
+#backlight,
+#pulseaudio,
+#clock,
+#tray,
+#custom-launch_wofi,
+#custom-wlogout {
+  padding: 3px 10px;
+  margin: 0 4px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  transition: background 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+#battery:hover,
+#network:hover,
+#backlight:hover,
+#pulseaudio:hover,
+#custom-launch_wofi:hover,
+#custom-wlogout:hover {
+  background: rgba(100, 150, 255, 0.1);
+  color: #c8d8ff;
+  box-shadow:
+    inset 0 0 6px rgba(90, 130, 255, 0.3),
+    0 0 8px rgba(120, 70, 255, 0.25);
+}
+
+/* ========== Specific Modules ========== */
+#clock {
+  color: #b8caff;
+  font-weight: bold;
+  padding: 0 16px;
+}
+
+#battery {
+  color: #3dcf6f;
+}
+
+#pulseaudio {
+  color: #7c9eff;
+}
+
+#pulseaudio.microphone {
+  color: #c88aff;
+}
+
+#network {
+  color: #5ca9ff;
+}
+
+/* ========== Window Module ========== */
+#window {
+ color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  padding: 3px 12px;
+  margin: 0 10px;
+}
+
+/* ========== Tray ========== */
+#tray {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 3px 8px;
+}
+
+/* ========== Custom Buttons ========== */
+#custom-wlogout {
+  color: #ff4d6d;
+}
+
+
+
+
+
+/* ========== Bluetooth ========== */
+#custom-bluetooth {
+  color: #6d7aff; /* calm bluish tone when off */
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 3px 10px;
+  margin: 0 4px;
+  transition: all 0.2s ease;
+}
+
+/* Hover effect — faint highlight */
+#custom-bluetooth:hover {
+  color: #9fb4ff;
+  background: rgba(80, 120, 255, 0.15);
+  box-shadow:
+    inset 0 0 6px rgba(90, 130, 255, 0.35),
+    0 0 8px rgba(120, 70, 255, 0.25);
+}
+
+/* Active/Connected look — glowing blue rune aura */
+#custom-bluetooth.connected {
+  color: #a4c8ff;
+  background: rgba(104, 255, 45, 0.589);
+  box-shadow:
+    inset 0 0 10px rgb(0, 255, 128),
+    0 0 14px rgb(60, 255, 0);
+  border: 1px solid rgba(0, 231, 50, 0.3);
+}
+
+
+
+#custom-wlogout {
+  color: #ff4d6d;
+  background: rgba(255, 70, 90, 0.1);
+  padding: 3px 10px;
+  margin: 0 4px;
+  border-radius: 8px;
+  transition: background 0.2s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+#custom-wlogout:hover {
+  background: rgba(255, 70, 90, 0.15);
+  color: #ff7d8f;
+  box-shadow:
+    inset 0 0 6px rgba(255, 70, 90, 0.4),
+    0 0 10px rgba(255, 70, 90, 0.3);
+}
+ /*test if it works from past lovenish
+ to future lovenish*/
