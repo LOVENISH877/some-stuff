@@ -1,0 +1,98 @@
+{
+    // Editor appearance
+    "editor.minimap.enabled": false,
+    // "editor.fontFamily": "JetBrainsMonoNL Nerd Font Mono",
+    "editor.fontFamily": "JetBrainsMonoNL Nerd Font Mono",
+    "editor.fontWeight": "bold",
+    "editor.fontSize": 18,
+    "editor.wordWrap": "off",
+    "diffEditor.wordWrap": "off",
+    "editor.guides.indentation": false,
+    "editor.guides.bracketPairs": true,
+    "editor.inlayHints.enabled": "off",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.cursorStyle": "line",
+    "workbench.colorTheme": "Lunar Blue (dark)",
+    "workbench.colorCustomizations": {
+//         // "editor.lineHighlightBackground": "#26354c",
+        // "editor.lineHighlightBorder": "#9fced11f",
+        // "editor.background": "#1E1E2E",
+        // "editor.foreground": "#CDD6F4",
+        // "editorCursor.foreground": "#F5E0DC",
+        // "editorLineNumber.foreground": "#8E95B3",
+        // "editor.selectionBackground": "#1c375580"
+    },
+    // Cursor settings (ninja style)
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorBlinking": "phase",
+    "editor.cursorWidth": 3,
+    "editor.cursorSurroundingLines": 3,
+    // SmearCursor settings (requires Custom  CSS & JS Loader)
+    "smearcursor.animation_time": 20,
+    "smearcursor.animation_easing": "ease-out",
+    "smearcursor.max_length": 6,
+    "smearcursor.tip_shrink": 0.3,
+    "smearcursor.tail_shrink": 0.3,
+    "smearcursor.opacity": 0.5,
+    "vscode_custom_css.imports": [
+        "file:///home/k/.vscode/extensions/yesitsfebreeze.smearcursor-1.2.0/_smearcursor.js"
+    ],
+    "files.autoSave": "afterDelay",
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.fontLigatures": true,
+    "workbench.iconTheme": "vscode-icons",
+    "editor.codeActions.triggerOnFocusChange": true,
+    "files.autoSaveDelay": 0.1,
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "javascript": false
+    },
+    "leetcode.hint.configWebviewMarkdown": false,
+    "leetcode.workspaceFolder": "/home/k/Documents/GitHub/cpp_java_python_dsa/Leetcode",
+    "geminicodeassist.project": "neat-agency-kbwf2",
+    "geminicodeassist.inlineSuggestions.enableAuto": false,
+    "diffEditor.codeLens": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "chat.instructionsFilesLocations": {
+        ".github/instructions": true,
+        "/tmp/postman-collections-post-response.instructions.md": true,
+        "/tmp/postman-collections-pre-request.instructions.md": true,
+        "/tmp/postman-folder-post-response.instructions.md": true,
+        "/tmp/postman-folder-pre-request.instructions.md": true,
+        "/tmp/postman-http-request-post-response.instructions.md": true,
+        "/tmp/postman-http-request-pre-request.instructions.md": true
+    },
+    "workbench.sideBar.location": "right",
+    "explorer.confirmDelete": false,
+    "terminal.integrated.suggest.inlineSuggestion": "off",
+    "terminal.integrated.suggest.providers": {
+        "vscode.terminal-suggest": false,
+        "lsp": false
+    },
+    "terminal.integrated.suggest.showStatusBar": false,
+    "terminal.integrated.suggest.suggestOnTriggerCharacters": false,
+    "terminal.integrated.suggest.upArrowNavigatesHistory": false,
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    // "editor.matchBrackets": false,
+    "leetcode.defaultLanguage": "cpp",
+    "editor.matchBrackets": "never",
+    "chat.viewSessions.orientation": "stacked",
+    "leetcode.hint.commandShortcut": false,
+    "pgsql.serverGroups": [
+        {
+            "name": "Servers",
+            "id": "26CE50FB-71F5-4662-9622-695A82B43545",
+            "isDefault": true
+        }
+    ],
+    "postman.mcp.notifications.postmanMCP": false,
+    "vsicons.dontShowNewVersionMessage": true,
+
+}
